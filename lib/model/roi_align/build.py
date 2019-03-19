@@ -1,6 +1,6 @@
 import os
 import torch
-from torch.utils.ffi import create_extension
+from torch.utils.cpp_extension import BuildExtension
 
 # sources = ['src/roi_align.c']
 # headers = ['src/roi_align.h']
@@ -21,7 +21,7 @@ print(this_file)
 extra_objects = ['src/roi_align_kernel.cu.o']
 extra_objects = [os.path.join(this_file, fname) for fname in extra_objects]
 
-ffi = create_extension(
+ffi = BuildExtension(
     '_ext.roi_align',
     headers=headers,
     sources=sources,

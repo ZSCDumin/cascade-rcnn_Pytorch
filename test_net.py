@@ -22,13 +22,13 @@ from torch.autograd import Variable
 
 from roi_data_layer.roidb import combined_roidb
 from roi_data_layer.roibatchLoader import roibatchLoader
-from model.utils.config import cfg, cfg_from_file, cfg_from_list, get_output_dir
-from model.rpn.bbox_transform import clip_boxes
-from model.nms.nms_wrapper import nms, soft_nms
-from model.rpn.bbox_transform import bbox_transform_inv
-from model.utils.net_utils import vis_detections
-from model.fpn.cascade.detnet_backbone import detnet as detnet_cascade
-from model.fpn.non_cascade.detnet_backbone import detnet as detnet_noncascade
+from lib.model.utils.config import cfg, cfg_from_file, cfg_from_list, get_output_dir
+from lib.model.rpn.bbox_transform import clip_boxes
+from lib.model.nms.nms_wrapper import nms, soft_nms
+from lib.model.rpn.bbox_transform import bbox_transform_inv
+from lib.model.utils.net_utils import vis_detections
+from lib.model.fpn.cascade.detnet_backbone import detnet as detnet_cascade
+from lib.model.fpn.non_cascade.detnet_backbone import detnet as detnet_noncascade
 
 import pdb
 

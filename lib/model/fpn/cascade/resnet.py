@@ -2,8 +2,8 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from model.utils.config import cfg
-from model.fpn.cascade.fpn import _FPN
+from lib.model.utils.config import cfg
+from lib.model.fpn.cascade.fpn import _FPN
 
 import torch
 import torch.nn as nn

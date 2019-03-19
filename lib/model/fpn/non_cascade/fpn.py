@@ -8,13 +8,13 @@ import torchvision.models as models
 from torch.autograd import Variable
 import numpy as np
 import torchvision.utils as vutils
-from model.utils.config import cfg    # rm 'lib.', or cfg will create a new copy
-from model.rpn.rpn_fpn import _RPN_FPN
-from model.roi_pooling.modules.roi_pool import _RoIPooling
-from model.roi_crop.modules.roi_crop import _RoICrop
-from model.roi_align.modules.roi_align import RoIAlignAvg
-from model.rpn.proposal_target_layer import _ProposalTargetLayer
-from model.utils.net_utils import _smooth_l1_loss, _crop_pool_layer, _affine_grid_gen, _affine_theta
+from lib.model.utils.config import cfg    # rm 'lib.', or cfg will create a new copy
+from lib.model.rpn.rpn_fpn import _RPN_FPN
+from lib.model.roi_pooling.modules.roi_pool import _RoIPooling
+from lib.model.roi_crop.modules.roi_crop import _RoICrop
+from lib.model.roi_align.modules.roi_align import RoIAlignAvg
+from lib.model.rpn.proposal_target_layer import _ProposalTargetLayer
+from lib.model.utils.net_utils import _smooth_l1_loss, _crop_pool_layer, _affine_grid_gen, _affine_theta
 import time
 import pdb
 

@@ -5,9 +5,9 @@
 # Written by Ross Girshick
 # --------------------------------------------------------
 import torch
-from model.utils.config import cfg
-from model.nms.nms_gpu import nms_gpu
-from model.nms.cpu_nms import cpu_soft_nms
+from lib.model.utils.config import cfg
+from lib.model.nms.nms_gpu import nms_gpu
+from lib.model.nms.cpu_nms import cpu_soft_nms
 import numpy as np
 
 
